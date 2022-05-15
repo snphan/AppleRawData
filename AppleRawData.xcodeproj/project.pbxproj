@@ -20,6 +20,8 @@
 		EACA408C28315AD50032AA5F /* AppleRawDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACA408B28315AD50032AA5F /* AppleRawDataTests.swift */; };
 		EACA409628315AD50032AA5F /* AppleRawDataUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACA409528315AD50032AA5F /* AppleRawDataUITests.swift */; };
 		EACA409828315AD50032AA5F /* AppleRawDataUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACA409728315AD50032AA5F /* AppleRawDataUITestsLaunchTests.swift */; };
+		EACA40AD28315F070032AA5F /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACA40AC28315F060032AA5F /* WorkoutManager.swift */; };
+		EACA40B1283170900032AA5F /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EACA40B0283170900032AA5F /* HealthKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +99,9 @@
 		EACA409128315AD50032AA5F /* AppleRawDataUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppleRawDataUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EACA409528315AD50032AA5F /* AppleRawDataUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleRawDataUITests.swift; sourceTree = "<group>"; };
 		EACA409728315AD50032AA5F /* AppleRawDataUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleRawDataUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EACA40AC28315F060032AA5F /* WorkoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutManager.swift; sourceTree = "<group>"; };
+		EACA40AE283170900032AA5F /* AppleRawData WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "AppleRawData WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		EACA40B0283170900032AA5F /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS8.5.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EACA40B1283170900032AA5F /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +138,7 @@
 				EACA408A28315AD50032AA5F /* AppleRawDataTests */,
 				EACA409428315AD50032AA5F /* AppleRawDataUITests */,
 				EACA405F28315AC30032AA5F /* Products */,
+				EACA40AF283170900032AA5F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -158,8 +165,10 @@
 		EACA407128315AD10032AA5F /* AppleRawData WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				EACA40AE283170900032AA5F /* AppleRawData WatchKit Extension.entitlements */,
 				EACA407228315AD10032AA5F /* AppleRawDataApp.swift */,
 				EACA407428315AD10032AA5F /* ContentView.swift */,
+				EACA40AC28315F060032AA5F /* WorkoutManager.swift */,
 				EACA407628315AD10032AA5F /* NotificationController.swift */,
 				EACA407828315AD10032AA5F /* NotificationView.swift */,
 				EACA407A28315AD20032AA5F /* ComplicationController.swift */,
@@ -194,6 +203,14 @@
 				EACA409728315AD50032AA5F /* AppleRawDataUITestsLaunchTests.swift */,
 			);
 			path = AppleRawDataUITests;
+			sourceTree = "<group>";
+		};
+		EACA40AF283170900032AA5F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EACA40B0283170900032AA5F /* HealthKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -388,6 +405,7 @@
 				EACA407B28315AD20032AA5F /* ComplicationController.swift in Sources */,
 				EACA407328315AD10032AA5F /* AppleRawDataApp.swift in Sources */,
 				EACA407928315AD10032AA5F /* NotificationView.swift in Sources */,
+				EACA40AD28315F070032AA5F /* WorkoutManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,6 +568,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "AppleRawData WatchKit Extension/AppleRawData WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AppleRawData WatchKit Extension/Preview Content\"";
@@ -582,6 +601,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "AppleRawData WatchKit Extension/AppleRawData WatchKit Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"AppleRawData WatchKit Extension/Preview Content\"";

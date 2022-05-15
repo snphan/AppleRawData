@@ -8,9 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var workoutManager: WorkoutManager
+    
+    @State private var heartRate = 0
+    @State private var O2Sat = 95
+    
     var body: some View {
-        Text("Hello, World!")
-            .padding()
+        VStack {
+            Text("Heart Rate: \(self.heartRate.formatted(.number.precision(.fractionLength(0)))) BPM")
+                .padding()
+            Text("O2 Sat: \(self.O2Sat)%")
+        }.onAppear {
+            workoutManager.requestAuthorization()
+        }
     }
 }
 

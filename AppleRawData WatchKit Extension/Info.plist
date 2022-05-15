@@ -12,5 +12,9 @@
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.watchkit</string>
 	</dict>
+	<key>NSHealthUpdateUsageDescription</key>
+	<string>We will need your data for research purposes.</string>
+	<key>NSHealthShareUsageDescription</key>
+	<string>We will need to track your workouts.</string>
 </dict>
 </plist>
