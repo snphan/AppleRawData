@@ -16,5 +16,7 @@
 	<string>We will need your data for research purposes.</string>
 	<key>NSHealthShareUsageDescription</key>
 	<string>We will need to track your workouts.</string>
+	<key>NSMotionUsageDescription</key>
+	<string>We need your motion data for research.</string>
 </dict>
 </plist>

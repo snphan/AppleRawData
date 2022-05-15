@@ -22,6 +22,7 @@
 		EACA409828315AD50032AA5F /* AppleRawDataUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACA409728315AD50032AA5F /* AppleRawDataUITestsLaunchTests.swift */; };
 		EACA40AD28315F070032AA5F /* WorkoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACA40AC28315F060032AA5F /* WorkoutManager.swift */; };
 		EACA40B1283170900032AA5F /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EACA40B0283170900032AA5F /* HealthKit.framework */; };
+		EACA40B3283190910032AA5F /* IMUManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EACA40B2283190900032AA5F /* IMUManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +103,7 @@
 		EACA40AC28315F060032AA5F /* WorkoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutManager.swift; sourceTree = "<group>"; };
 		EACA40AE283170900032AA5F /* AppleRawData WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "AppleRawData WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		EACA40B0283170900032AA5F /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS8.5.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
+		EACA40B2283190900032AA5F /* IMUManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMUManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,6 +171,7 @@
 				EACA407228315AD10032AA5F /* AppleRawDataApp.swift */,
 				EACA407428315AD10032AA5F /* ContentView.swift */,
 				EACA40AC28315F060032AA5F /* WorkoutManager.swift */,
+				EACA40B2283190900032AA5F /* IMUManager.swift */,
 				EACA407628315AD10032AA5F /* NotificationController.swift */,
 				EACA407828315AD10032AA5F /* NotificationView.swift */,
 				EACA407A28315AD20032AA5F /* ComplicationController.swift */,
@@ -405,6 +408,7 @@
 				EACA407B28315AD20032AA5F /* ComplicationController.swift in Sources */,
 				EACA407328315AD10032AA5F /* AppleRawDataApp.swift in Sources */,
 				EACA407928315AD10032AA5F /* NotificationView.swift in Sources */,
+				EACA40B3283190910032AA5F /* IMUManager.swift in Sources */,
 				EACA40AD28315F070032AA5F /* WorkoutManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

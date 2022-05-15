@@ -9,17 +9,17 @@ import SwiftUI
 
 struct ContentView: View {
     @EnvironmentObject var workoutManager: WorkoutManager
-    
-    @State private var heartRate = 0
-    @State private var O2Sat = 95
-    
+    @EnvironmentObject var imuManager: IMUManager
     var body: some View {
         VStack {
-            Text("Heart Rate: \(self.heartRate.formatted(.number.precision(.fractionLength(0)))) BPM")
+            Text("Heart Rate: \(self.workoutManager.heartRate.formatted(.number.precision(.fractionLength(0)))) BPM")
                 .padding()
-            Text("O2 Sat: \(self.O2Sat)%")
+            
+            Text("a: \(imuManager.accel[0].formatted(.number.precision(.fractionLength(2)))), \(imuManager.accel[1].formatted(.number.precision(.fractionLength(2)))), \(imuManager.accel[2].formatted(.number.precision(.fractionLength(2))))")
         }.onAppear {
             workoutManager.requestAuthorization()
+            workoutManager.startWorkout()
+            imuManager.startAccelerometers()
         }
     }
 }
