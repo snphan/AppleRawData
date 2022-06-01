@@ -1,11 +1,6 @@
 # Apple iOS: HealthKit & Core Motion
 
-Day:  - 
-Done: No
-Due This Week?: No
-Tags: Docs, Manuals
-
-*This manual goes over how to make an iOS App that can get the heartRate from healthkit and acceleration from CoreMotion*
+*💡 This manual goes over how to make an iOS App that can get the heartRate from healthkit and acceleration from CoreMotion*
 
 # General Setup
 
@@ -40,7 +35,8 @@ struct ContentView_Previews: PreviewProvider {
 
 1. In “Watch App Extension” > Signing and Capabilities, add HealthKit
 
-![Screen Shot 2022-05-16 at 4.12.06 PM.png](Apple%20iOS%20HealthKit%20&%20Core%20Motion%20b01de5a3a85540af89140d5d1e648ae6/Screen_Shot_2022-05-16_at_4.12.06_PM.png)
+![Screen_Shot_2022-05-16_at_4 12 06_PM](https://user-images.githubusercontent.com/59156097/171448490-1e1ad70a-50f3-4257-860c-3bd8545d79a5.png)
+
 
 1. In the “Watch App Extension” info.plist, add the following policies
     1. NSHealthUpdateUsageDescription
